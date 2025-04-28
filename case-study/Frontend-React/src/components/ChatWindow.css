@@ -1,0 +1,142 @@
+.chat-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 16px;
+  padding-top: 80px; 
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+}
+
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 15px;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+}
+
+.message-wrapper {
+  display: flex;
+}
+
+.message-wrapper.user {
+  justify-content: flex-end;
+}
+
+.message-wrapper.assistant {
+  justify-content: flex-start;
+}
+
+.message-wrapper.assistant ul {
+  list-style: none;
+  margin: 0;
+  padding: 8px 0 ;
+}
+
+.message-wrapper.assistant li {
+  margin: 4px 0;
+  line-height: 1.4;
+}
+
+.message-wrapper.assistant a {
+  color: #444;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.message-wrapper.assistant a:hover {
+  color: #000;
+}
+
+
+.message-bubble {
+  background-color: #eef2f6;
+  color: #333;
+  padding: 10px 14px;
+  border-radius: 6px;
+  max-width: 70%;
+  line-height: 1.5;
+  border: 1px solid #ccc;
+  white-space: pre-wrap;
+}
+
+.message-wrapper.user .message-bubble {
+  background-color: #d1ecf1;
+  border-color: #bee5eb;
+}
+
+.chat-input-area {
+  display: flex;
+  padding-top: 12px;
+  gap: 8px;
+  align-items: stretch;
+  margin-top: auto;
+}
+
+.chat-input {
+  flex: 1;
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: none;
+  font-family: inherit;
+  height: 42px; 
+}
+
+.chat-send-button {
+  background-color: #0074cc;
+  color: white;
+  border: none;
+  padding: 0 16px;
+  font-size: 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  height: 42px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chat-send-button:hover {
+  background-color: #005fa3;
+}
+
+.loading-bar {
+  font-style: italic;
+  color: #888;
+  animation: blink 1.2s infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 0.2; }
+  50% { opacity: 1; }
+  100% { opacity: 0.2; }
+}
+
+.toggle-history-button {
+  background-color: transparent;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  margin: 10px 0;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+.toggle-history-button:hover {
+  color: #0056b3;
+}
+

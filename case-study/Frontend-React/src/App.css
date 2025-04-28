@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f5f5f5;
+  line-height: 1.6;
+}
+
+.App {
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+.heading {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 800px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  font-weight: 600;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  z-index: 999;
+  padding: 0 16px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  gap: 12px;
+}
+
+.logo-icon {
+  background-color: #f4a733;
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.logo-info {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.logo-brand {
+  font-weight: 700;
+  font-size: 16px;
+  color: #222;
+}
+
+.logo-since {
+  font-size: 14px;
+  color: #407a80;
+  font-weight: 500;
+}
+
+.logo-anniversary {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  line-height: 1;
+}
+
+.logo-25 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #407a80;
+}
+
+.logo-years {
+  font-size: 14px;
+  font-weight: 700;
+  color: #f4a733;
+}
+
+.chat-footer {
+  text-align: center;
+  max-width: 800px;
+  margin: 12px auto;
+  padding: 12px 16px;
+  font-size: 13px;
+  color: #666;
+  background-color: #f0f0f0;
+  border-top: 1px solid #ddd;
+}
+
+.chat-footer a {
+  color: #1a73e8;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 4px;
+}
+
+.chat-footer a:hover {
+  text-decoration: underline;
+}
